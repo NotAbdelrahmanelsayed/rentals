@@ -7,6 +7,7 @@ from frappe.website.website_generator import WebsiteGenerator
 
 class Vehicle(WebsiteGenerator):
 	def validate(self):
+		super().validate()
 		self.set_title()
 	
 	def set_title(self):

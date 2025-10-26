@@ -10,12 +10,18 @@
   "title",
   "make",
   "color",
+  "insurance_expiry",
+  "status",
+  "get_summary",
+  "summary",
   "column_break_mrzd",
   "model",
   "year",
   "license_plate",
   "is_published",
-  "route"
+  "route",
+  "vehicle_image",
+  "barcode_ffsn"
  ],
  "fields": [
   {
@@ -67,7 +73,38 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route"
+   "label": "route"
+  },
+  {
+   "fieldname": "vehicle_image",
+   "fieldtype": "Attach Image",
+   "label": "Vehicle Image"
+  },
+  {
+   "fieldname": "insurance_expiry",
+   "fieldtype": "Date",
+   "label": "Insurance Expiry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nExpired\nSoled"
+  },
+  {
+   "fieldname": "get_summary",
+   "fieldtype": "Button",
+   "label": "Get Summary"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "HTML",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "barcode_ffsn",
+   "fieldtype": "Barcode"
   }
  ],
  "grid_page_length": 50,
@@ -75,7 +112,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-10-20 00:26:48.140569",
+ "modified": "2025-10-24 23:35:55.485559",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",

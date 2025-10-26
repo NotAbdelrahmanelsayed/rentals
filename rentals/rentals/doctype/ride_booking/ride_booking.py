@@ -8,7 +8,8 @@ from frappe.model.document import Document
 class RideBooking(Document):
 	def validate(self):
 		if not self.rate:
-			frappe.throw("Please Provide a Rate.")
+			self.rate = frappe.db.get_single_value("Rentals Settings", "rate")
+
 		total_distance = 0
 		for item in self.items:
 			total_distance += item.distance
