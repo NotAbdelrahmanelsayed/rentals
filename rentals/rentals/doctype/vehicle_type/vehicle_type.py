@@ -5,8 +5,5 @@
 from frappe.model.document import Document
 
 
-class Driver(Document):
+class VehicleType(Document):
 	pass
-	# def before_save(self):
-	# 	# self.full_name = f"{self.first_name} {self.last_name}" if self.last_name else self.first_name
-		

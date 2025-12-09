@@ -21,6 +21,10 @@ app_license = "mit"
 # 	}
 # ]
 
+fixtures = [
+    {"dt": "Vehicle Type", "filters": {"is_standard":1}},
+    "Rentals Settings"
+]
 # Includes in <head>
 # ------------------
 
@@ -149,19 +153,19 @@ doc_events = {
 # Scheduled Tasks
 # ---------------
 
-scheduler_events = {
-	"all": [
-		"rentals.tasks.all"
-	],
-	"daily": [
-		"rentals.tasks.daily"
-	],
-	"Cron": {
-        "30 15 * * 3": [
-            "rentals.api.send_payment_remainders"
-		]
-	}
-}
+# scheduler_events = {
+# 	"all": [
+# 		"rentals.tasks.all"
+# 	],
+# 	"daily": [
+# 		"rentals.tasks.daily"
+# 	],
+# 	"Cron": {
+#         "30 15 * * 3": [
+#             "rentals.api.send_payment_remainders"
+# 		]
+# 	}
+# }
 
 # Testing
 # -------

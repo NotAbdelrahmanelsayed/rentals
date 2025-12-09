@@ -21,7 +21,7 @@ def execute(filters=None):
 	chart = {
 		"data": {
 			"labels" :[x.make for x in data],
-			"datasets": [{"values": [x.total_revenue for x in data]}],
+			"dataset": [{"values": [x.total_revenue for x in data]}],
 		},
 		"type": "pie",
 	}

@@ -15,6 +15,7 @@
   "get_summary",
   "summary",
   "column_break_mrzd",
+  "type",
   "model",
   "year",
   "license_plate",
@@ -105,6 +106,12 @@
   {
    "fieldname": "barcode_ffsn",
    "fieldtype": "Barcode"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "Vehicle Type"
   }
  ],
  "grid_page_length": 50,
@@ -112,7 +119,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2025-10-24 23:35:55.485559",
+ "modified": "2025-10-26 21:09:34.541287",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Vehicle",
